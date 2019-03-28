@@ -1,0 +1,17 @@
+<div class="col-md-6 mx-auto text-center mt-3">
+    <div id="chronoExample">
+        <div>
+            <button 
+              [disabled]="play"
+              (click)="playTimer()" 
+              class="btn btn-timer btn-success startButton"><fa-icon [icon]="faPlay"></fa-icon></button>
+            <button 
+              [disabled]="!play"
+              (click)="pauseTimer()"
+              class="btn btn-timer btn-primary pauseButton mx-2"><fa-icon [icon]="faPause"></fa-icon></button>
+            <button 
+              (click)="stopTimer()"
+              class="btn btn-timer btn-warning resetButton"><fa-icon [icon]="faUndoAlt"></fa-icon></button>
+        </div>
+    </div>
+</div>

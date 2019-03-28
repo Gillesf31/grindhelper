@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-6 mx-auto text-center">
+      <div class="countSeries mb-3"><span id="numbSeries" class="display-2">{{ repNumber }}</span></div>
+      <div class="btn-group-3">
+          <button (click)="onPlus()" type="button" id="btnPlus" class="btn btn-counter btn-success">
+            <fa-icon class="fa-2x" [icon]="faPlus"></fa-icon>
+          </button>
+          <button (click)="onMinus()" type="button" id="btnMinus" class="btn btn-counter btn-danger mx-2">
+            <fa-icon class="fa-2x" [icon]="faMinus"></fa-icon>
+          </button>
+          <button (click)="onReset()" type="button" id="btnReset" class="btn btn-counter btn-warning">
+            <fa-icon class="fa-2x" [icon]="faUndoAlt"></fa-icon>
+          </button>
+      </div>
+  </div>
+</div>
